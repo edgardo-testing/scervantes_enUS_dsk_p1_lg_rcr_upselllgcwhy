@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: Thu Jun 20 2019 08:46:43 GMT-0500 (Central Daylight Time) -->
+ <!-- CREATED AT: Thu Jun 20 2019 14:51:59 GMT+0000 (UTC) -->
 
 <style>
 /* Hide when editing */
@@ -1516,7 +1516,7 @@ body.rtl .frb-checkbox {
     line-height: 1.2142857143; /*17px @14px*/
 }
 
-/*Donb t show RML when fixed and expanded*/
+/*Don’t show RML when fixed and expanded*/
 .frb--fixed .frb-rml {
     display: none;
 }
@@ -1791,7 +1791,7 @@ legend.error {
 
 
 
-/* Module: Shaking effect height on: Thu Jun 20 2019 08:46:43 GMT-0500 (Central Daylight Time) */
+/* Module: Shaking effect height on: Thu Jun 20 2019 14:51:59 GMT+0000 (UTC) */
 .shake {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
@@ -2804,7 +2804,7 @@ $(function() {
             var otherMonthlyAmount = form.otherMonthlyAmount.value;
             otherMonthlyAmount = otherMonthlyAmount.replace(/[,.](\d)$/, ':$10');
             otherMonthlyAmount = otherMonthlyAmount.replace(/[,.](\d)(\d)$/, ':$1$2');
-            otherMonthlyAmount = otherMonthlyAmount.replace(/[$B#b,B%,.]/g, '');
+            otherMonthlyAmount = otherMonthlyAmount.replace(/[$£€¥,.]/g, '');
             otherMonthlyAmount = otherMonthlyAmount.replace(/:/, '.');
             amount = otherMonthlyAmount;
         }
@@ -2875,7 +2875,7 @@ $(function() {
         $('body').off('click keypress', '.frb--minimized');
     };
 
-    // The nagb s yes/no functionality
+    // The nag’s yes/no functionality
     $('#yes-button').on('click keypress', function(e) {
         if (e.which === 13 || e.type === 'click') {
             frb.clickedYes();
